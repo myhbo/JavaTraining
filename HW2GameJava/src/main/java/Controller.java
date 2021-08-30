@@ -15,13 +15,9 @@ public class Controller {
 
         view.printMessage(View.STARTING_MESSAGE + model.getMinBoundary() + " to " + model.getMaxBoundary());
 
-        model.setCorrectNumber(getRandomNumber(model.getMinBoundary(), model.getMaxBoundary()));
+        model.setCorrectNumber(model.getRandomNumber(model.getMinBoundary(), model.getMaxBoundary()));
 
         guessNumber(userInput);
-    }
-
-    public int getRandomNumber(int min, int max) {
-        return (int) ((Math.random() * (max - min)) + min);
     }
 
     private static boolean isDigit(String s) throws NumberFormatException {
