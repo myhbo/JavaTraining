@@ -16,6 +16,12 @@ public class NoteTaker {
         this.userInput = scanner;
     }
 
+    /**
+     *
+     * @param input from scanner
+     * @param regex
+     * @return first name in proper format
+     */
     String inputFirstname (Scanner input, String regex){
 
         String result;
@@ -30,6 +36,12 @@ public class NoteTaker {
         }
     }
 
+    /**
+     *
+     * @param input from scanner
+     * @param regex
+     * @return last name in proper format
+     */
     String inputLastname(Scanner input, String regex) {
 
         String result;
@@ -44,6 +56,12 @@ public class NoteTaker {
 
     }
 
+    /**
+     *
+     * @param input from scanner
+     * @param regex
+     * @return phone number in proper format
+     */
     String inputPhonenumber(Scanner input, String regex) {
 
         String result;
@@ -57,6 +75,10 @@ public class NoteTaker {
         }
     }
 
+    /**
+     *
+     * @return hashmap with formatted values
+     */
     HashMap<String,String> noteToMap () {
         HashMap<String, String> notes = new HashMap<>();
         notes.put(view.getBundle().getString(ViewInterface.FIRSTNAME_FIELD),
