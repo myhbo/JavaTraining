@@ -2,8 +2,8 @@ package controller;
 
 public interface RegexInterface {
 
-    String FIRSTNAME = "string.get.firstname.regex.data";
-    String LASTNAME = "string.get.lastname.regex.data";
-    String PHONENUMBER = "string.get.phonenumber.regex.data";
+    String FIRSTNAME = "string.get.firstname.data.regexp";
+    String LASTNAME = "string.get.lastname.data.regexp";
+    String PHONENUMBER = "string.get.phonenumber.data.regexp";
 
 }

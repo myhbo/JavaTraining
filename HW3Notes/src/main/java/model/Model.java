@@ -1,17 +1,19 @@
 package model;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 public class Model {
-    private String firstName;
-    private String secondName;
-    private long phoneNumber;
 
-    public Model() {
+    private final List<Map<String, String>> notes = new ArrayList<>();
 
+    public void addNotes(HashMap<String, String> newNote) {
+        this.notes.add(newNote);
     }
 
-    public Model(String firstName, String secondName, long phoneNumber) {
-        this.firstName = firstName;
-        this.secondName = secondName;
-        this.phoneNumber = phoneNumber;
+    public List<Map<String, String>> getNotes() {
+        return notes;
     }
 }
