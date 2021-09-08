@@ -10,4 +10,8 @@ public interface ViewInterface {
     String FIRSTNAME_FIELD = "string.get.firstnamefield.data";
     String LASTNAME_FIELD = "string.get.secondnamefield.data";
     String PHONE_NUMBER_FIELD = "string.get.phonenumberfield.data";
+    String LOGIN_MESSAGE = "string.get.login.data";
+    String LOGIN_FIELD = "string.get.loginfield.data";
+    String LOGIN_EXCEPTION_MESSAGE = "string.get.loginexception.message.data";
+
 }

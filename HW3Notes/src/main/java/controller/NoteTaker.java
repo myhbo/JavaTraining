@@ -16,6 +16,20 @@ public class NoteTaker {
         this.userInput = scanner;
     }
 
+    String inputLogin (Scanner input, String regex){
+
+        String result;
+
+        while (true) {
+            view.printMessage(view.getBundle().getString(ViewInterface.INPUT_MESSAGE)
+                    + view.getBundle().getString(ViewInterface.LOGIN_MESSAGE));
+            if ((result = input.nextLine()).matches(regex))
+                return result;
+            view.printMessage(view.getBundle().getString(ViewInterface.WRONG_INPUT));
+
+        }
+    }
+
     /**
      *
      * @param input from scanner
@@ -81,6 +95,8 @@ public class NoteTaker {
      */
     HashMap<String,String> noteToMap () {
         HashMap<String, String> notes = new HashMap<>();
+        notes.put(view.getBundle().getString(ViewInterface.LOGIN_FIELD),
+                inputLogin(userInput, view.getBundle().getString(RegexInterface.LOGIN)));
         notes.put(view.getBundle().getString(ViewInterface.FIRSTNAME_FIELD),
                 inputFirstname(userInput, view.getBundle().getString(RegexInterface.FIRSTNAME)));
         notes.put(view.getBundle().getString(ViewInterface.LASTNAME_FIELD),

@@ -1,13 +1,15 @@
 package view;
 
+import controller.LoginAlreadyTakenException;
+
 import java.util.Locale;
 import java.util.ResourceBundle;
 
 public class View {
 
     static String RESOURCE_BUNDLE = "messages";
-    public static Locale local = new Locale("ua");
-                        //new Locale("en");
+    public static Locale local = //new Locale("ua");
+                        new Locale("en");
     public static ResourceBundle bundle =
             ResourceBundle.getBundle(RESOURCE_BUNDLE, local);
 
@@ -17,6 +19,9 @@ public class View {
 
     public void printMessage(String message) {
         System.out.println(message);
+    }
+    public void printException(LoginAlreadyTakenException e) {
+        System.out.println(e.getMessage() + " " + e.getTakenLogin());
     }
 
 }
