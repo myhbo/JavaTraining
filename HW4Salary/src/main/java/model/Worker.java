@@ -10,6 +10,19 @@ public class Worker extends Employee{
     private final long MAIN_SALARY = 5000;
     private final long ADDITIONAL_SALARY= 200;
 
+    public Worker(String name, Date birthDate, Date startingWork) {
+        this.name = name;
+        this.birthDate = birthDate;
+        this.startingWork = startingWork;
+    }
+
+    public Worker(String name, Date birthDate, Date startingWork, String department) {
+        this.name = name;
+        this.birthDate = birthDate;
+        this.startingWork = startingWork;
+        this.department = department;
+    }
+
     @Override
     public long getSalary() {
         Date currentDate = new Date();
