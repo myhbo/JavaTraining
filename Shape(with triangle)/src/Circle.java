@@ -1,8 +1,3 @@
-package ua.kpi.tef;
-
-/**
- * Created by User on 07.04.2016.
- */
 public class Circle extends Shape {
     private Point centerCircle;
     private double radius;

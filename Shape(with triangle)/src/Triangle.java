@@ -1,5 +1,3 @@
-package ua.kpi.tef;
-
 public class Triangle extends Shape{
     Point first;
     Point second;

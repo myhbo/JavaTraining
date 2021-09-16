@@ -1,8 +1,3 @@
-package ua.kpi.tef;
-
-/**
- * Created by User on 07.04.2016.
- */
 public abstract class Shape {
     public abstract double square();
     public abstract double perimeter();
