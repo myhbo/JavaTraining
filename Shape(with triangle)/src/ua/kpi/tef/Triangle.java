@@ -47,9 +47,9 @@ public class Triangle extends Shape{
     public void move(double dx, double dy) {
         first.setX(first.getX() + dx);
         first.setY(first.getY() + dy);
+        second.setY(second.getX() + dx);
         second.setY(second.getY() + dy);
-        second.setY(second.getY() + dy);
-        third.setY(third.getY() + dy);
+        third.setY(third.getX() + dx);
         third.setY(third.getY() + dy);
     }
 
